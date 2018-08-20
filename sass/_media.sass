@@ -1,0 +1,301 @@
+@import "bourbon"
+
+/*==========  Desktop First Method  ==========*/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	.menu__link
+		padding: 0
+	.top-line__tel
+		padding: 15px 5px 15px 5px
+	.section__header
+		padding-top: 80px
+	.advantages__title
+		width: 90%
+		font-size: 17px
+	.advantages__p
+		font-size: 15px
+		line-height: 19px
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+
+	.top-line__wrap
+		flex-flow: row wrap
+	.top-line__logo
+		width: 35%
+	.top-line__tel
+		padding: 10px 5px 10px 5px
+		flex: 1 auto
+	.tel__wrap
+		flex-direction: row
+		justify-content: center
+	.tel__numb
+		font-size: 18px
+		margin-right: 10px
+	.bot-line__wrap
+		padding-top: 20px
+	.bot-line__p
+		width: 100%
+	.section__item
+		width: 50%
+
+
+	.item__p
+		width: 85%
+		font-size: 15px
+
+
+	.advantages__title
+		width: 99%
+		font-size: 15px
+	.advantages__p
+		font-size: 13px
+		line-height: 19px
+		width: 95%
+
+
+
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	.layout_size_m
+		width: auto
+	.bot-line__h1
+		font-size: 60px
+	.section__content
+		flex-wrap: wrap
+	.section__item
+		width: 50%
+	.header__slider
+		display: none
+	.layout
+		min-height: 0
+	.header
+		min-height: 0
+	.header__top-line
+		padding-top: 0
+		position: fixed
+		left: 0
+		top: 0
+		width: 100%
+		z-index: 2
+	.menu__list
+		background-color: #231f1c
+		position: absolute
+		left: 0
+		display: none
+		right: 15px
+		top: 85px
+		flex-flow: column wrap
+		align-items: flex-end
+		justify-content: flex-end
+	.active
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+	.menu__item
+		margin-right: 15px
+		margin-top: 10px
+		margin-bottom: 5px
+	.menu__link
+		height: 25px
+		line-height: 20px
+	.top-line__wrap
+		flex-flow: column wrap
+		position: relative
+		overflow: visible
+	.logo__wrap 
+		min-height: 47px
+	.logo__img
+		height: 78px
+		left: -53px
+		top: -27px
+	.bot-line__wrap
+		padding: 120px 0 15px 0
+	.bot-line__h1 
+		font-size: 35px
+		line-height: 50px
+	.bot-line__p
+		font-size: 18px
+	.logo__click
+		height: 62px
+
+	.top-line__wrap
+		flex-flow: row wrap
+	.top-line__menu
+		flex-grow: 0
+		margin-right: 15px
+		margin-top: 5px
+	.top-line__logo
+		flex-grow: 0
+	.top-line__tel
+		padding: 5px
+		flex: 1 100%
+	.item__bot_white
+		margin-bottom: 0
+	.item__top
+		min-height: 260px
+
+
+	.item__wrap
+		top: 75%
+	.item__wrapper
+		width: 90%
+	.item__title
+		font-size: 18px
+	.item__p
+		width: 98%
+		font-size: 14px
+		padding-top: 20px
+
+
+
+
+
+	.advantages__title
+		width: 80%
+	.advantages__p
+		width: 80%
+
+	.advantages__item:nth-child(1)
+		border: 1px solid #d5d4d4
+	.advantages__item:nth-child(2)
+		border: 1px solid #d5d4d4
+		border-left: none
+	.advantages__item:nth-child(3)
+		border: 1px solid #d5d4d4
+		border-top: none
+	.advantages__item:nth-child(4)
+		border: 1px solid #d5d4d4
+		border-top: none
+		border-left: none
+
+
+
+
+
+
+
+
+
+	/*Disable Animation on Mobile Devices*/
+	.animated
+		/*CSS transitions*/
+		-o-transition-property: none !important
+		-moz-transition-property: none !important
+		-ms-transition-property: none !important
+		-webkit-transition-property: none !important
+		transition-property: none !important
+		/*CSS transforms*/
+		-o-transform: none !important
+		-moz-transform: none !important
+		-ms-transform: none !important
+		-webkit-transform: none !important
+		transform: none !important
+		/*CSS animations*/
+		-webkit-animation: none !important
+		-moz-animation: none !important
+		-o-animation: none !important
+		-ms-animation: none !important
+		animation: none !important
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	.layout_size_m
+		width: auto
+	.bot-line__h1 
+		font-size: 30px
+		line-height: 50px
+		line-height: 40px
+	.bot-line__p
+		font-size: 16px
+		line-height: 20px
+	.tel__numb
+		font-size: 15px
+	.menu__list
+		top: 81px
+	.section__item
+		width: 100%
+
+
+	.services__item
+		width: 100%
+	.item__wrap
+		top: 73%
+	.item__wrapper
+		width: 80%
+	.item__title
+		font-size: 19px
+	.item__p
+		width: 85%
+		font-size: 14px
+		padding-top: 25px
+
+
+
+
+
+	.advantages__item:nth-child(1)
+		border: 1px solid #d5d4d4
+	.advantages__item:nth-child(2)
+		border: 1px solid #d5d4d4
+		border-top: none
+	.advantages__item:nth-child(3)
+		border: 1px solid #d5d4d4
+		border-top: none
+	.advantages__item:nth-child(4)
+		border: 1px solid #d5d4d4
+		border-top: none
+
+
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	.item__p
+		width: 95%
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	.layout_size_m
+		min-width: 750px
+		padding: 0 15px 0 15px
+	.menuicon
+		display: none
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	.layout_size_m
+		min-width: 970px
+		padding: 0 15px 0 15px
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	.layout_size_m
+		min-width: 1170px
+		padding: 0 15px 0 15px
+	.section__header
+		padding-top: 80px
+
+@media (min-width: 1360px)
+	.layout_size_m
+		min-width: 1340px
+		padding: 0 15px 0 15px

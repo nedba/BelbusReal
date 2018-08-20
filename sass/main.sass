@@ -1,0 +1,699 @@
+@import "bourbon"
+@import "vars.sass"
+
+//Load Libs SASS
+@import "app/libs/animate/animate.sass"
+@import "app/libs/OwlCarousel2/dist/assets/owl.carousel.min"
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+//Custom Styles Here
+
+.body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.6
+	font-family: "RobotoRegular", sans-serif
+	overflow-x: hidden
+	margin: 0
+	padding: 0
+	box-sizing: border-box
+	a, button
+		color: #fff
+		&:hover
+			text-decoration: none
+			color: #fff
+		&:focus
+			text-decoration: none
+		&:active
+			text-decoration: none
+			outline: none
+
+
+.layout_style_black
+	background-color: #231f1c
+
+.layout_style_white
+	background-color: #fff
+	padding-top: 80px
+	padding-bottom: 70px
+
+.layout_size_m
+	margin-left: auto
+	margin-right: auto
+	padding: 0 15px 0 15px
+	position: relative
+
+
+
+.layout
+	min-height: 720px
+	position: relative
+
+
+.header
+	background-image: url(../img/Header.png)
+	background-repeat: no-repeat
+	background-size: cover
+	min-height: 720px
+	background-position: 50%
+	box-shadow: inset 0 -800px 0 rgba(0,0,0,0.35)
+
+.header__top-line
+	padding-top: 40px
+
+.top-line__wrap
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: space-between
+	background-color: #f50f38
+	min-height: 80px
+	overflow: hidden
+.top-line__logo
+	width: 25%
+.logo__wrap
+	position: relative
+	min-height: 80px
+.logo__link
+.logo__click
+	width: 220px;
+	height: 80px;
+	position: absolute;
+	left: 55px;
+	top: 14px;
+	bottom: 0;
+.logo__img
+	position: absolute
+	background-image: url(../img/logo.png)
+	width: 482px
+	height: 97px
+	left: -29px;
+	top: -14px;
+
+
+
+.top-line__menu
+	flex-grow: 2
+.menu
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	z-index: 2
+.menu__list
+	width: 100%
+	list-style-type: none
+	margin: 0
+	padding: 0
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: space-around
+.menu__item
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+.menu__link
+	line-height: 80px
+	text-transform: uppercase
+	font-weight: bold
+	padding: 0 20px
+	height: 81px
+	&:hover
+		border-bottom: 4px solid #fff
+
+.menuicon__item1,.menuicon__item2,.menuicon__item3
+	width: 35px;
+	height: 5px;
+	background-color: #fff;
+	margin: 6px 0;
+	transition: all .5s ease
+.change .menuicon__item1
+	transform: rotate(-45deg) translate(-9px,6px)
+.change .menuicon__item2
+	opacity: 0
+.change .menuicon__item3
+	transform: rotate(45deg) translate(-8px,-8px)
+.menuicon
+	cursor: pointer
+
+
+.top-line__tel
+	padding: 15px 15px 15px 25px
+	background-color: #e50029
+.tel__wrap
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	flex-direction: column
+.tel__numb
+.tel__mts
+	background-image: url(../img/mts.png)
+.tel__velcom
+	background-image: url(../img/velcom.png)
+.tel__velcom, .tel__mts
+	width: 12px
+	height: 12px
+	display: inline-block
+	background-repeat: no-repeat
+	background-position: 50%
+
+.bot-line__wrap
+	padding-top: 115px
+
+.bot-line__h1, .bot-line__p
+	padding: 0
+	margin: 0
+	color: #fff
+	text-transform: uppercase
+.bot-line__h1
+	font-weight: bold
+	font-size: 72px
+	line-height: 77px
+	width: auto
+.bot-line__p
+	font-weight: 100
+	margin-top: 40px
+	font-size: 25px
+	line-height: 33px
+	width: 30%
+
+.slider
+	position: absolute
+	bottom: 0
+	right: 0
+	padding-right: 15px
+.slider__wrap
+	width: 580px
+.slider__item
+	width: 580px
+	height: 170px
+	background-image: url(../img/slide.png)
+	background-repeat: no-repeat
+	background-position: 6% 19%
+	padding: 45px 0 0 20px
+	margin: 0
+.owl-stage-outer
+	border:
+		left: 2px solid red
+		bottom: 2px solid red
+.slider__text
+	color: #fff
+	font-size: 30px
+	display: inline-block
+	line-height: 40px
+	text-transform: uppercase
+	margin-left: 20px
+.slider__rings
+	background-image: url(../img/rings.png)
+	width: 60px
+	height: 50px
+	display: inline-block
+	background-repeat: no-repeat
+	background-position: 50% 
+	margin-bottom: 10px
+.owl-nav
+	text-align: right
+.owl-prev,.owl-next
+	width: 60px
+	height: 60px
+	background-color: #e50029!important
+.owl-prev,.owl-next
+	&:hover
+		background-color: #f73859!important
+.owl-prev span,.owl-next span
+	color: #fff
+	font-size: 35px
+	left: 0
+	top: 0
+
+
+
+
+
+
+
+
+
+
+
+
+.section__header
+	padding-bottom: 80px
+.section__text
+	text-align: center
+	font-size: 30px
+	text-transform: uppercase
+	color: #000
+
+.section__content
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+.section__item
+	width: 25%
+	&:visited
+		text-decoration: none
+		text-transform: none
+	&:active
+		text-decoration: none
+		text-transform: none
+	&:focus
+		text-decoration: none
+		text-transform: none
+	&:hover
+		text-decoration: none
+		.red-part
+			background-color: #e50029
+			transition: all .5s ease
+		.red-part__text
+			color: #fff
+		.red-part__text_hidden
+			display: inline-block
+.item__top
+	position: relative
+	transition: all .5s ease
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: space-between
+	align-items: flex-end
+.top__left
+	position: absolute
+	left: 0
+	bottom: 0
+.top__right
+	position: absolute
+	right: 0
+	bottom: 0
+.img-resp
+	max-width: 100%
+	height: auto
+	display: block
+.left__img
+	background-color: #322e2b
+	padding: 5px
+	width: 30px
+	height: 30px
+	opacity: .8
+.left__text
+	color: #fff
+	text-decoration: none
+	font-size: 10px
+	text-transform: uppercase
+	padding: 5px 15px
+	text-align: center
+	&:hover
+		text-decoration: none
+.left__text_red
+	background-color: #e50029
+.left__text_yellow
+	background-color: #ff6910
+.left__i
+	margin-bottom: 2px
+	&:last-child
+		margin-bottom: 0
+.stars
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	padding-bottom: 5px
+	margin-right: 5px
+	background-image: url(../img/star1.png)
+	width: 65px
+	height: 18px
+	background-repeat: repeat no-repeat
+.current
+	z-index: 1
+	background-image: url(../img/star.png)
+	background-repeat: repeat no-repeat
+
+
+
+.item__bot
+.item__bot_white
+	text-align: center
+	padding: 25px 0 20px
+	height: 101px
+	margin-bottom: 25px
+.item__bot_gray
+	background-color: #f0efef
+	padding: 15px 0 0 0
+	position: relative
+.item__text
+	font-size: 18px
+	font-weight: bold
+	color: #000
+	&:hover
+		color: #e50029
+.icons
+	padding-bottom: 10px
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: space-around
+	&__icon
+		color: #000
+		&:hover
+			color: #e50029
+			&:after
+				content: attr(data-title)
+				position: absolute
+				font-size: 13px
+				color: #999999
+				left: 0
+				right: 0
+				top: -19px
+				text-align: center
+				z-index: 1
+				font-weight: bold
+
+.icons__icon_num
+	font-weight: bold
+
+
+.red-part
+	text-align: center
+	overflow: hidden
+	padding: 10px 0 10px 0 
+.red-part__text
+	position: relative
+	font-size: 14px
+	color: #e50029
+	text-transform: uppercase
+	font-weight: bold
+	&::before
+		content: ''
+		position: absolute
+		width: 85%
+		height: 1px
+		background-color: #e50029
+		left: 50%
+		top: -10px
+		transform: translate(-50%)
+.red-part__text_hidden
+	display: none
+
+
+.btn__wrap
+	padding-top: 70px
+	padding-bottom: 70px
+	text-align: center
+.btn__button
+	font-size: 14px
+	color: #969493
+	padding: 15px 40px
+	text-transform: uppercase
+	font-weight: bold
+	border: 1px solid #969493
+	transition: all .5s ease
+	&:visited
+		color: #969493
+	&:focus
+		text-decoration: none
+	&:hover
+		background-color: #e50029
+		border: 1px solid #e50029
+		color: #fff
+		text-decoration: none
+
+
+
+
+
+.section__text_white
+	color: #fff
+.services
+	width: 99.9%
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	flex-flow: row wrap
+	&__item
+		width: 50%
+		max-height: 270px
+		overflow: hidden
+		outline: none
+		&:hover
+			.item__wrap
+				top: 10%
+			.item__img
+				opacity: 1
+.item
+	position: relative
+	&__img
+		width: 100%
+		height: 270px
+		opacity: .3
+		transition: all 1s ease
+	&__wrap
+		position: absolute
+		left: 0
+		top: 72%
+		right: 0
+		color: #fff
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: flex-end
+		align-items: flex-end
+		transition: all 1s ease
+	&__wrapper
+		width: 80%
+	&__title
+		text-transform: uppercase
+		font-size: 20px
+		border-bottom: 2px solid #e50e34
+		font-weight: bold
+		padding-bottom: 15px
+	&__p
+		font-size: 16px
+		line-height: 18px
+		font-weight: 100
+		padding-top: 25px
+		padding-bottom: 45px
+		width: 70%
+
+
+
+
+.advantages
+	padding-bottom: 70px
+	&__item
+		height: 370px
+		border: 1px solid #d5d4d4
+		border-left: none
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		align-items: center
+		flex-flow: column nowrap
+		justify-content: center
+		&:first-child
+			border-left: 1px solid #d5d4d4
+		&:hover
+			background-color: #f50f38
+			border: none
+			padding-bottom: 90px
+			.advantages__wrapper
+				color: #fff
+			.advantages__p
+				display: block
+				padding-bottom: 40px
+			.advantages__img
+				display: none
+			.advantages__img_hv
+				display: block
+			.advantages__circle
+				border: 1px solid #fff
+	&__circle
+		border: 1px solid #ff0848
+		border-radius: 50%
+	&__img
+		padding: 35px
+	&__img_hv
+		display: none
+	&__wrap
+		pt
+	&__wrapper
+		padding-top: 30px
+		color: #f73859
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		align-items: center
+		flex-flow: column nowrap
+	&__title
+		text-transform: uppercase
+		width: 80%
+		text-align: center
+		font-weight: bold
+		font-size: 18px
+	&__p
+		width: 90%
+		text-align: center
+		display: none
+		padding-top: 20px
+		font-size: 16px
+
+
+
+.section5
+	padding-bottom: 60px
+.reviews
+	background-color: #f8f6f6
+	&__item
+		min-height: 360px
+		padding: 45px 10px
+.bus
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	margin-bottom: 25px
+	&__img
+		width: 55px
+		height: 40px
+	&__name
+		color: #f50f38
+		font-size: 14px
+		text-transform: uppercase
+		font-weight: bold
+		margin-left: 10px
+		line-height: 18px
+.reviews__bot
+	padding-top: 30px
+	color: #000
+.reviews__info
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: space-between
+.reviews__name
+	width: 40%
+.reviews__date
+	color: #999999
+	margin-left: 15px
+	display: inline-block
+.reviews__p
+	padding-top: 20px
+	font-size: 14px
+
+
+
+.about__text
+	font-size: 16px
+	padding: 60px 0
+.about__h1
+	text-transform: uppercase
+	font-weight: bold
+	color: #f50f38
+.about__p
+	color: #fff
+	padding: 20px 0
+a.accent
+	color: #f50f38
+	&:hover
+		text-decoration: underline
+		color: #f50f38
+.about__bot
+	background-image: url(../img/sect6bg.png)
+	background-repeat: no-repeat
+	background-position: 50%
+	background-color: #2d2926
+	padding-top: 40px
+.about__bot-text
+	color: #fff
+	text-align: center
+.btn__wrap
+	padding-top: 40px
+	padding-bottom: 40px
+.about__btn
+	border: none
+	color: #fff
+	background-color: #f50f38
+	outline: none
+	&:hover
+		background-color: #ff365a
+		outline: none
+		border: none
+	&:visited
+		color: #fff
+	&:active
+		border: none
+	&:focused
+		outline: none
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//ALWAYS END
+@import "media"
