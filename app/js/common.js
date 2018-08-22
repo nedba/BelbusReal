@@ -30,6 +30,35 @@ $(function() {
 		});
 	});
 
+	$(document).ready(function () {
+		//initialize swiper when document ready
+		var mySwiper = new Swiper ('.swiper-container', {
+			// Optional parameters
+			loop: true,
+			slidesPerView: 4,
+			pagination: {
+				el: '.swiper-pagination',
+				clickable: true,
+			},
+			breakpoints: {
+				992: {
+					slidesPerView:3
+				},
+				768: {
+					slidesPerView:2
+				},
+				480: {
+					slidesPerView:1
+				}
+			}
+		})
+	});
+
+
+
+
+
+
 
 	//SVG Fallback
 	if(!Modernizr.svg) {

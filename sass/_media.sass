@@ -55,7 +55,15 @@
 		line-height: 19px
 		width: 95%
 
-
+	.footer__top
+		flex-flow: row wrap
+	.footer__line
+		width: 70%
+	.footer__contacts
+	.footer__menu
+		order: 2
+	.bot__tel, .bot__contacts, .bot__co
+		font-size: 12px
 
 
 
@@ -81,7 +89,7 @@
 		left: 0
 		top: 0
 		width: 100%
-		z-index: 2
+		z-index: 100
 	.menu__list
 		background-color: #231f1c
 		position: absolute
@@ -155,8 +163,6 @@
 
 
 
-
-
 	.advantages__title
 		width: 80%
 	.advantages__p
@@ -176,8 +182,41 @@
 		border-left: none
 
 
-
-
+	.footer__top
+		height: 256px
+		flex-flow: column wrap
+		align-content: space-between
+	.footer__line
+		display: none
+	.footer__logo
+		width: 50%
+	.footer__menu
+		width: 50%
+	.footer-menu__list
+		flex-flow: column wrap
+	.footer-menu__item
+		margin: 5px 0 5px 0
+	.footer__contacts
+		width: 20%
+		flex-flow: column wrap
+		align-items: flex-end
+	.contacts__link
+		margin: 5px 0 5px 0
+	.footer__menu
+		margin-left: 20px
+		order: 0
+	.footer__bot
+		padding: 0
+		flex-flow: column nowrap
+		height: auto
+	.bot__contacts 
+		margin-left: 0
+		margin-top: 10px
+		margin-bottom: 25px
+	.bot__co
+		margin-left: 0
+	.bot__tel, .bot__contacts, .bot__co
+		font-size: 16px
 
 
 

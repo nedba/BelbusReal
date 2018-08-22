@@ -4,6 +4,9 @@
 //Load Libs SASS
 @import "app/libs/animate/animate.sass"
 @import "app/libs/OwlCarousel2/dist/assets/owl.carousel.min"
+@import "app/libs/swiper/dist/css/swiper.min"
+@import url("https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css")
+
 
 *::-webkit-input-placeholder
 	color: #666
@@ -38,18 +41,17 @@ body textarea:required:valid
 	font-family: "RobotoRegular", sans-serif
 	overflow-x: hidden
 	margin: 0
-	padding: 0
 	box-sizing: border-box
 	a, button
-		color: #fff
 		&:hover
 			text-decoration: none
-			color: #fff
 		&:focus
 			text-decoration: none
+			outline: none
 		&:active
 			text-decoration: none
 			outline: none
+
 
 
 .layout_style_black
@@ -144,6 +146,7 @@ body textarea:required:valid
 	display: -o-flex
 	display: flex
 .menu__link
+	color: #fff
 	line-height: 80px
 	text-transform: uppercase
 	font-weight: bold
@@ -151,7 +154,8 @@ body textarea:required:valid
 	height: 81px
 	&:hover
 		border-bottom: 4px solid #fff
-
+	&:visited
+		color: #fff
 .menuicon__item1,.menuicon__item2,.menuicon__item3
 	width: 35px;
 	height: 5px;
@@ -179,6 +183,9 @@ body textarea:required:valid
 	display: flex
 	flex-direction: column
 .tel__numb
+	color: #fff
+	&:hover
+		color: #fff
 .tel__mts
 	background-image: url(../img/mts.png)
 .tel__velcom
@@ -446,7 +453,7 @@ body textarea:required:valid
 	text-transform: uppercase
 	font-weight: bold
 	border: 1px solid #969493
-	transition: all .5s ease
+	transition: background-color .5s ease
 	&:visited
 		color: #969493
 	&:focus
@@ -676,13 +683,157 @@ a.accent
 		outline: none
 
 
+.section7
+	padding-bottom: 40px
+.partners
+	position: relative
+	padding-top: 60px
+	margin-top: -50px
+.swiper
+	&-slide
+		border: 1px solid gray
+	&__item
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: center
+		align-items: center
+		height: 140px
+		&:hover
+			.swiper__img
+				filter: none
+	&__img
+		filter: grayscale(100%)
+	&-pagination
+		top: 0px
+.swiper-pagination
+	left: 0
+	width: 100%
+.swiper-pagination-bullet
+	margin: 0 4px
+	width: 10px
+	height: 10px
+.swiper-pagination-bullet-active
+	background: #f50f38
 
 
 
-
-
-
-
+.footer
+	padding: 40px 0
+	&__top
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: space-between
+	&__logo
+		padding-top: 10px
+	&-menu__list
+		list-style-type: none
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: space-between
+		align-content: center
+		padding: 0
+	&-menu__item
+		margin-left: 30px
+	&-menu__link
+		text-transform: uppercase
+		font-size: 16px
+		white-space: nowrap
+		color: #fff
+		font-weight: bold
+		&:hover
+			color: #e50e34
+		&:focus
+			color: #e50e34
+	&__line
+		height: 1px
+		width: 100%
+		background-color: #e50e34
+		margin-top: 30px
+		margin-left: 15px
+.footer__contacts
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: space-between
+	align-items: center
+	margin-left: 35px
+.contacts__link
+	border: 1px solid #fff
+	width: 30px
+	height: 30px
+	text-align: center
+	margin-right: 15px
+	&:last-child
+		margin-right: 0
+	&:hover 
+		border: 1px solid #e50e34
+.contacts__item
+	color: #fff
+.footer__bot
+	color: #fff
+	padding-top: 35px
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: flex-start
+	height: 150px
+.bot__tel
+	font-size: 14px
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	flex-flow: column nowrap
+	justify-content: space-between
+.bot__tel_1
+.bot__viber
+	background-image: url(../img/botviber.png)
+.bot__mts
+	background-image: url(../img/botmts.png)
+.bot__velc
+	background-image: url(../img/botvelcom.png)
+.ics
+	width: 30px
+	height: 20px
+	display: inline-block
+	background-repeat: no-repeat
+	background-position: 50% 100%
+.contacts1
+	font-size: 16px
+	margin-left: 40px
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	flex-flow: column nowrap
+	justify-content: space-between
+.contacts1__link
+	color: #e50e34
+	&:hover
+		color: #ff365a
+.bot__co
+	margin-left: auto
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	align-items: flex-end
 
 
 
