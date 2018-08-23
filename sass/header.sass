@@ -1,13 +1,238 @@
 @import "bourbon"
 @import "vars.sass"
 
-body
+@import "app/libs/OwlCarousel2/dist/assets/owl.carousel.min"
+
+
+.body
 	font-size: 16px
 	min-width: 320px
 	position: relative
 	line-height: 1.6
 	font-family: "RobotoRegular", sans-serif
 	overflow-x: hidden
+	margin: 0
+	box-sizing: border-box
+	a, button
+		&:hover
+			text-decoration: none
+		&:focus
+			text-decoration: none
+			outline: none
+		&:active
+			text-decoration: none
+			outline: none
 
-.hidden
-	display: none
+
+
+.layout_style_black
+	background-color: #231f1c
+
+.layout_style_white
+	background-color: #fff
+	padding-top: 80px
+	padding-bottom: 70px
+
+.layout_size_m
+	margin-left: auto
+	margin-right: auto
+	padding: 0 15px 0 15px
+	position: relative
+
+
+
+.layout
+	min-height: 720px
+	position: relative
+
+
+.header
+	background-image: url(../img/Header.png)
+	background-repeat: no-repeat
+	background-size: cover
+	min-height: 720px
+	background-position: 50%
+	box-shadow: inset 0 -800px 0 rgba(0,0,0,0.35)
+
+.header__top-line
+	padding-top: 40px
+
+.top-line__wrap
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: space-between
+	background-color: #f50f38
+	min-height: 80px
+	overflow: hidden
+.top-line__logo
+	width: 25%
+.logo__wrap
+	position: relative
+	min-height: 80px
+.logo__click
+	width: 220px;
+	height: 80px;
+	position: absolute;
+	left: 55px;
+	top: 14px;
+	bottom: 0;
+.logo__img
+	position: absolute
+	background-image: url(../img/logo.png)
+	width: 482px
+	height: 97px
+	left: -29px;
+	top: -14px;
+
+
+
+.top-line__menu
+	flex-grow: 2
+.menu
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	z-index: 2
+.menu__list
+	width: 100%
+	list-style-type: none
+	margin: 0
+	padding: 0
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: space-around
+.menu__item
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+.menu__link
+	color: #fff
+	line-height: 80px
+	text-transform: uppercase
+	font-weight: bold
+	padding: 0 20px
+	height: 81px
+	&:hover
+		border-bottom: 4px solid #fff
+	&:visited
+		color: #fff
+.menuicon__item1,.menuicon__item2,.menuicon__item3
+	width: 35px;
+	height: 5px;
+	background-color: #fff;
+	margin: 6px 0;
+	transition: all .5s ease
+.change .menuicon__item1
+	transform: rotate(-45deg) translate(-9px,6px)
+.change .menuicon__item2
+	opacity: 0
+.change .menuicon__item3
+	transform: rotate(45deg) translate(-8px,-8px)
+.menuicon
+	cursor: pointer
+
+
+.top-line__tel
+	padding: 15px 15px 15px 25px
+	background-color: #e50029
+.tel__wrap
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	flex-direction: column
+.tel__numb
+	color: #fff
+	&:hover
+		color: #fff
+.tel__mts
+	background-image: url(../img/mts.png)
+.tel__velcom
+	background-image: url(../img/velcom.png)
+.tel__velcom, .tel__mts
+	width: 12px
+	height: 12px
+	display: inline-block
+	background-repeat: no-repeat
+	background-position: 50%
+
+.bot-line__wrap
+	padding-top: 115px
+
+.bot-line__h1, .bot-line__p
+	padding: 0
+	margin: 0
+	color: #fff
+	text-transform: uppercase
+.bot-line__h1
+	font-weight: bold
+	font-size: 72px
+	line-height: 77px
+	width: auto
+.bot-line__p
+	font-weight: 100
+	margin-top: 40px
+	font-size: 25px
+	line-height: 33px
+	width: 30%
+
+.slider
+	position: absolute
+	bottom: 0
+	right: 0
+	padding-right: 15px
+.slider__wrap
+	width: 580px
+.slider__item
+	width: 580px
+	height: 170px
+	background-image: url(../img/slide.png)
+	background-repeat: no-repeat
+	background-position: 6% 19%
+	padding: 45px 0 0 20px
+	margin: 0
+.owl-stage-outer
+	border:
+		left: 2px solid red
+		bottom: 2px solid red
+.slider__text
+	color: #fff
+	font-size: 30px
+	display: inline-block
+	line-height: 40px
+	text-transform: uppercase
+	margin-left: 20px
+.slider__rings
+	background-image: url(../img/rings.png)
+	width: 60px
+	height: 50px
+	display: inline-block
+	background-repeat: no-repeat
+	background-position: 50% 
+	margin-bottom: 10px
+.owl-nav
+	text-align: right
+.owl-prev,.owl-next
+	width: 60px
+	height: 60px
+	background-color: #e50029!important
+.owl-prev,.owl-next
+	&:hover
+		background-color: #f73859!important
+.owl-prev span,.owl-next span
+	color: #fff
+	font-size: 35px
+	left: 0
+	top: 0
+
