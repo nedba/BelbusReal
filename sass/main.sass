@@ -74,195 +74,6 @@ body textarea:required:valid
 
 
 
-
-
-.section__header
-	padding-bottom: 80px
-.section__text
-	text-align: center
-	font-size: 30px
-	text-transform: uppercase
-	color: #000
-
-.section__content
-	display: -webkit-flex
-	display: -moz-flex
-	display: -ms-flex
-	display: -o-flex
-	display: flex
-.section__item
-	width: 25%
-	&:visited
-		text-decoration: none
-		text-transform: none
-	&:active
-		text-decoration: none
-		text-transform: none
-	&:focus
-		text-decoration: none
-		text-transform: none
-	&:hover
-		text-decoration: none
-		.red-part
-			background-color: #e50029
-			transition: all .5s ease
-		.red-part__text
-			color: #fff
-		.red-part__text_hidden
-			display: inline-block
-.item__top
-	position: relative
-	transition: all .5s ease
-	display: -webkit-flex
-	display: -moz-flex
-	display: -ms-flex
-	display: -o-flex
-	display: flex
-	justify-content: space-between
-	align-items: flex-end
-.top__left
-	position: absolute
-	left: 0
-	bottom: 0
-.top__right
-	position: absolute
-	right: 0
-	bottom: 0
-.img-resp
-	max-width: 100%
-	height: auto
-	display: block
-.left__img
-	background-color: #322e2b
-	padding: 5px
-	width: 30px
-	height: 30px
-	opacity: .8
-.left__text
-	color: #fff
-	text-decoration: none
-	font-size: 10px
-	text-transform: uppercase
-	padding: 5px 15px
-	text-align: center
-	&:hover
-		text-decoration: none
-.left__text_red
-	background-color: #e50029
-.left__text_yellow
-	background-color: #ff6910
-.left__i
-	margin-bottom: 2px
-	&:last-child
-		margin-bottom: 0
-.stars
-	display: -webkit-flex
-	display: -moz-flex
-	display: -ms-flex
-	display: -o-flex
-	display: flex
-	padding-bottom: 5px
-	margin-right: 5px
-	background-image: url(../img/star1.png)
-	width: 65px
-	height: 18px
-	background-repeat: repeat no-repeat
-.current
-	z-index: 1
-	background-image: url(../img/star.png)
-	background-repeat: repeat no-repeat
-
-
-
-.item__bot_white
-	text-align: center
-	padding: 25px 0 20px
-	height: 101px
-	margin-bottom: 25px
-.item__bot_gray
-	background-color: #f0efef
-	padding: 15px 0 0 0
-	position: relative
-.item__text
-	font-size: 18px
-	font-weight: bold
-	color: #000
-	&:hover
-		color: #e50029
-.icons
-	padding-bottom: 10px
-	display: -webkit-flex
-	display: -moz-flex
-	display: -ms-flex
-	display: -o-flex
-	display: flex
-	justify-content: space-around
-	&__icon
-		color: #000
-		&:hover
-			color: #e50029
-			&:after
-				content: attr(data-title)
-				position: absolute
-				font-size: 13px
-				color: #999999
-				left: 0
-				right: 0
-				top: -19px
-				text-align: center
-				z-index: 1
-				font-weight: bold
-.icons__icon_num
-	font-weight: bold
-
-
-.red-part
-	text-align: center
-	overflow: hidden
-	padding: 10px 0 10px 0 
-.red-part__text
-	position: relative
-	font-size: 14px
-	color: #e50029
-	text-transform: uppercase
-	font-weight: bold
-	&::before
-		content: ''
-		position: absolute
-		width: 85%
-		height: 1px
-		background-color: #e50029
-		left: 50%
-		top: -10px
-		transform: translate(-50%)
-.red-part__text_hidden
-	display: none
-
-
-.btn__wrap
-	padding-top: 70px
-	padding-bottom: 70px
-	text-align: center
-.btn__button
-	font-size: 14px
-	color: #969493
-	padding: 15px 40px
-	text-transform: uppercase
-	font-weight: bold
-	border: 1px solid #969493
-	transition: background-color .5s ease
-	&:visited
-		color: #969493
-	&:focus
-		text-decoration: none
-	&:hover
-		background-color: #e50029
-		border: 1px solid #e50029
-		color: #fff
-		text-decoration: none
-
-
-
 .section__text_white
 	color: #fff
 .services
@@ -287,7 +98,7 @@ body textarea:required:valid
 	position: relative
 	&__img
 		width: 100%
-		height: 270px
+		height: 271px
 		opacity: .3
 		transition: all 1s ease
 	&__wrap
@@ -409,8 +220,12 @@ body textarea:required:valid
 		margin-left: -50px
 		margin-top: -50px
 		cursor: pointer
+		transition: all .5s ease
 		&:hover
 			transform: scale(0.8)
+
+
+
 
 
 
@@ -657,6 +472,7 @@ a.accent
 	display: -o-flex
 	display: flex
 	align-items: flex-end
+
 
 
 

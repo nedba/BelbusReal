@@ -1,6 +1,6 @@
 $(function() {
 
-	$('.item__top').equalHeights();
+
 	$('.advantages__wrapper').equalHeights();
 
 

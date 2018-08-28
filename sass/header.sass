@@ -124,7 +124,10 @@
 	height: 81px
 	&:hover
 		border-bottom: 4px solid #fff
+		color: #fff
 	&:visited
+		color: #fff
+	&:focus
 		color: #fff
 .menuicon__item1,.menuicon__item2,.menuicon__item3
 	width: 35px;
@@ -194,6 +197,7 @@
 	padding-right: 15px
 .slider__wrap
 	width: 580px
+	overflow: hidden
 .slider__item
 	width: 580px
 	height: 170px
@@ -235,4 +239,350 @@
 	font-size: 35px
 	left: 0
 	top: 0
+
+
+/* Секция автопарк */
+
+
+.section__header
+	padding-bottom: 80px
+.section__text
+	text-align: center
+	font-size: 30px
+	text-transform: uppercase
+	color: #000
+
+.section__content
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+.section__item
+	width: 25%
+	&:visited
+		text-decoration: none
+		text-transform: none
+	&:active
+		text-decoration: none
+		text-transform: none
+	&:focus
+		text-decoration: none
+		text-transform: none
+	&:hover
+		text-decoration: none
+		.red-part
+			background-color: #e50029
+			transition: all .5s ease
+		.red-part__text
+			color: #fff
+		.red-part__text_hidden
+			display: inline-block
+.item__top
+	position: relative
+	transition: all .5s ease
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: space-between
+	align-items: flex-end
+.top__left
+	position: absolute
+	left: 0
+	bottom: 0
+.top__right
+	position: absolute
+	right: 0
+	bottom: 0
+.img-resp
+	width: 100%
+	height: auto
+	display: block
+.left__img
+	background-color: #322e2b
+	padding: 5px
+	width: 30px
+	height: 30px
+	opacity: .8
+.left__text
+	color: #fff
+	text-decoration: none
+	font-size: 10px
+	text-transform: uppercase
+	padding: 5px 15px
+	text-align: center
+	&:hover
+		text-decoration: none
+.left__text_red
+	background-color: #e50029
+.left__text_yellow
+	background-color: #ff6910
+.left__i
+	margin-bottom: 2px
+	&:last-child
+		margin-bottom: 0
+.stars
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	padding-bottom: 5px
+	margin-right: 5px
+	background-image: url(../img/star1.png)
+	width: 65px
+	height: 18px
+	background-repeat: repeat no-repeat
+.current
+	z-index: 1
+	background-image: url(../img/star.png)
+	background-repeat: repeat no-repeat
+
+
+
+.item__bot_white
+	text-align: center
+	padding: 25px 0 20px
+	height: 101px
+	margin-bottom: 25px
+.item__bot_gray
+	background-color: #f0efef
+	padding: 15px 0 0 0
+	position: relative
+.item__text
+	font-size: 18px
+	font-weight: bold
+	color: #000
+	&:hover
+		color: #e50029
+.icons
+	padding-bottom: 10px
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: space-around
+	&__icon
+		color: #000
+		&:hover
+			color: #e50029
+			&:after
+				content: attr(data-title)
+				position: absolute
+				font-size: 13px
+				color: #999999
+				left: 0
+				right: 0
+				top: -19px
+				text-align: center
+				z-index: 1
+				font-weight: bold
+.icons__icon_num
+	font-weight: bold
+
+
+.red-part
+	text-align: center
+	overflow: hidden
+	padding: 10px 0 10px 0 
+.red-part__text
+	position: relative
+	font-size: 14px
+	color: #e50029
+	text-transform: uppercase
+	font-weight: bold
+	&::before
+		content: ''
+		position: absolute
+		width: 85%
+		height: 1px
+		background-color: #e50029
+		left: 50%
+		top: -10px
+		transform: translate(-50%)
+.red-part__text_hidden
+	display: none
+
+
+.btn__wrap
+	padding-top: 70px
+	padding-bottom: 70px
+	text-align: center
+.btn__button
+	font-size: 14px
+	color: #969493
+	padding: 15px 40px
+	text-transform: uppercase
+	font-weight: bold
+	border: 1px solid #969493
+	transition: background-color .5s ease
+	&:visited
+		color: #969493
+	&:focus
+		text-decoration: none
+	&:hover
+		background-color: #e50029
+		border: 1px solid #e50029
+		color: #fff
+		text-decoration: none
+
+
+
+/*           страница АВТОПАРК               */
+.buses-title
+	padding-top: 65px
+	padding-bottom: 75px
+	color: #fff
+	text-transform: uppercase
+	font-weight: bold
+	font-size: 50px
+.buses__wrapper
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+.list__wrapper
+	width: 25%
+.content__wrpaper
+	width: 75%
+.section__content_33
+	flex-flow: row wrap
+.section__item_33
+	width: 33.3%
+.goals
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	padding: 30px 0
+	background-color: #f0efef
+.goals__item
+	color: #e50029
+	margin-left: 40px
+	text-decoration: underline
+	font-size: 16px
+	&:hover
+		text-decoration: none
+	&:visited
+		color: #e50029
+	&:focus
+		color: #e50029
+.current-goal
+	color: #2c2825
+	text-decoration: none
+	&:visited
+		color: #2c2825
+	&:focus
+		color: #2c2825
+.list__wrapper
+	background-color: #f8f6f6
+.list__header
+	padding-bottom: 30px
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: space-between
+	padding-top: 31px
+	flex-flow: row wrap
+.clean
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	margin-right: 15px
+	line-height: 32px
+	cursor: pointer
+.clean__text
+	font-size: 14px
+	color: #d6d0c8
+.list__name
+	text-transform: uppercase
+	font-size: 18px
+	color: #2d2926
+	font-weight: bold
+	margin-left: 20px
+.list__item
+	border-top: 1px solid #d6d0c8
+	color: #2d2926
+	&:visited
+		color: #2d2926
+	&:hover
+		color: #e50029
+		background-color: #fff
+.list__item:last-child
+	border-bottom: 1px solid #d6d0c8
+.label
+	cursor: pointer
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	align-items: center
+.item__name
+	font-size: 14px
+	margin-left: 20px
+.checkbox
+	display: none
+.sprite__item
+	background-image: url(../img/sprite.png)
+	background-repeat: no-repeat
+	width: 30px
+	height: 30px
+	display: inline-block
+	margin-left: 10px
+.sprite__item1
+	background-position: 0px -60px
+.sprite__item2
+	background-position: 0 0
+.sprite__item3
+	background-position: -90px -60px
+.sprite__item4
+	background-position: -30px 0
+.sprite__item5
+	background-position: 0 -90px
+.sprite__item6
+	background-position: -90px -30px
+.sprite__item7
+	background-position: -30px -60px
+.sprite__item8
+	background-position: -60px -90px
+.sprite__item9
+	background-position: -30px -30px
+.sprite__item10
+	background-position: -60px 0px
+.sprite__item11
+	background-position: 0px -30px
+.sprite__item12
+	background-position: -90px -90px
+.sprite__item13
+	background-position: -30px -90px
+.sprite__item14
+	background-position: -60px -30px
+.checkbox-custom
+	width: 14px
+	height: 14px
+	display: inline-block
+	border: 2px solid #d6d0c8
+	border-radius: 50%
+	margin-left: auto
+	margin-right: 10px
+// Почему это не работает???
+.checkbox:checked+.sprite__item
+	background-color: #e50029
+// А это работает???
+.checkbox:checked+.checkbox-custom
+	background-color: #e50029
+
+
+
+
 
