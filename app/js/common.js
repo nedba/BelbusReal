@@ -19,6 +19,51 @@ $(function() {
 		});
 	});
 
+	$(document).ready(function(){
+		$('.list__btn').click(function(){
+			$(this).toggleClass('list__btn_active');
+		});
+	});
+
+	$(document).ready(function(){
+		$('.list__btn').click(function(){
+			$('.list__content').toggleClass('list__content_active');
+		});
+	});
+
+	$(document).ready(function(){
+		$('.list__btn').click(function(){
+			$('.clean').toggleClass('clean_active');
+		});
+	});
+
+	$(document).ready(function(){
+		$('.btn-video').click(function(){
+			$(this).toggleClass('btn-video_active');
+		});
+	});
+
+	$(document).ready(function(){
+		$('.btn-video').click(function(){
+			$('.frame').toggleClass('frame_active');
+		});
+	});
+
+	$(document).ready(function(){
+		$('.btn-3d').click(function(){
+			$(this).toggleClass('btn-3d_active');
+		});
+	});
+
+	$(document).ready(function(){
+		$('.btn-3d').click(function(){
+			$('.model-3d').toggleClass('model-3d_active');
+		});
+	});
+
+
+
+
 
 	$(document).ready(function(){
 		$(".owl-carousel").owlCarousel({
